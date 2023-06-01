@@ -1,5 +1,7 @@
 package com.dev.oop.lesson7;
 
+/** 10.1 - Класс String. Теория. */
+
 public class Computer {
 
     private Ram ram;
