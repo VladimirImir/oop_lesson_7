@@ -12,8 +12,8 @@ package com.dev.oop.task;
 
 public class TimeIntervalRunner {
     public static void main(String[] args) {
-        TimeInterval timeInterval = new TimeInterval(30, 2, 1);
-        System.out.println(timeInterval.totalSeconds());
+        /** Ctrl + Alt + M */
+        TimeInterval timeInterval = createTimeInterval();
 
         TimeInterval timeInterval2 = new TimeInterval(timeInterval.totalSeconds());
         System.out.println(timeInterval2.totalSeconds());
@@ -21,5 +21,11 @@ public class TimeIntervalRunner {
 
         TimeInterval sumIntervals = timeInterval.sum(timeInterval2);
         sumIntervals.print();
+    }
+
+    private static TimeInterval createTimeInterval() {
+        TimeInterval timeInterval = new TimeInterval(30, 2, 1);
+        System.out.println(timeInterval.totalSeconds());
+        return timeInterval;
     }
 }
